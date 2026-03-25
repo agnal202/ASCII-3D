@@ -185,6 +185,5 @@ int main() {
     fflush(stdout);
     usleep(10000);
     printf("\e[2J");
-    printf("\e[?25h");
   }
 }

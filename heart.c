@@ -98,8 +98,6 @@ int main() {
   printf("for 3D enter ( 1 ) : ");
   is3D = getchar() == 1 ? 1 : 0;
 
-  printf("\e[?25l");
-
   for (int theta = 0; 1; theta++, theta %= 360) {
     T = theta * (M_PI / 180);
 
@@ -112,7 +110,6 @@ int main() {
     usleep(50000);
     printf("\e[2J");
   }
-  printf("\e[?25h");
 }
 
 /*
